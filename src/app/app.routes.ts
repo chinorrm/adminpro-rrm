@@ -1,11 +1,10 @@
 import { RouterModule, Routes } from '@angular/router';
+
+import { PagesComponent } from './pages/pages.component';
+
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { NopagefoundComponent } from './share/nopagefound/nopagefound.component';
-
-
-
-
+import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component';
 
 
 const appRoutes: Routes = [
@@ -14,4 +13,5 @@ const appRoutes: Routes = [
     { path: '**', component: NopagefoundComponent }
 ];
 
-export const APP_ROUTES = RouterModule.forRoot ( appRoutes, { useHash: true} );
+
+export const APP_ROUTES = RouterModule.forRoot( appRoutes, { useHash: true } );
